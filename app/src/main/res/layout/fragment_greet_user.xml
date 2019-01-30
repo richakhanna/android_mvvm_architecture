@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.richdroid.mvvm.GreetUserView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingStart="40dp"
+    android:paddingTop="40dp">
+
+
+    <TextView
+        android:id="@+id/helloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/helloTextView"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        tools:text="Xyz abc"/>
+
+    <Button
+        android:id="@+id/greetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helloTextView"
+        android:layout_marginTop="20dp"
+        android:text="@string/greet_user"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/greetButton"
+        android:layout_alignStart="@+id/greetButton"
+        android:layout_below="@+id/greetButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/clear"/>
+</com.richdroid.mvvm.GreetUserView>
